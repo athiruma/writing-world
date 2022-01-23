@@ -12,10 +12,10 @@ pipeline {
                     sh 'docker run -d --name writing-world writing-world'
                 }
             }
-            stage('Clean docker image'){
-                steps{
-                    sh 'docker stop writing-world && docker rm writing-world && docker rmi writing-world'
-                }
-            }
+            // stage('Clean docker image'){
+            //     steps{
+            //         sh 'docker stop writing-world && docker rm writing-world && docker rmi writing-world'
+            //     }
+            // }
         }
 }
