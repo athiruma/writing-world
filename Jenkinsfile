@@ -1,6 +1,6 @@
 //https://writingworld-9ba1f.web.app/
 pipeline {
-
+        agent any
         stages{
             stage('Build an Image'){
                 steps{
